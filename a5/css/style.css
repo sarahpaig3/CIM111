@@ -1,0 +1,28 @@
+body{
+
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+button{
+	width: 200px;
+	background-color: rgb(136, 41, 41);
+	color: white;
+	border: none;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: auto;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: auto;
+	align-content: center;
+	grid-row-gap: 10px;
+}
+
+#brandsButton{
+	height: auto;
+	width: auto;
+}
