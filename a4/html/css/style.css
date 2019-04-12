@@ -1,0 +1,260 @@
+
+
+body {
+font-size: 15px;
+    background-color: beige;
+
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
+button {
+background: #ffc600;
+border: 0;
+padding:10px 20px;
+}
+
+img {
+max-width: 100%;
+}
+
+.container {
+display:grid;
+grid-gap: 15px;
+}
+
+.topSection{
+display:grid;
+grid-gap: 15px;
+grid-template-areas:
+"logo logo income"
+"logo logo population";
+}
+
+.frosted{
+background-color: white;
+width: 200px;
+height:200px;
+padding-left:10px;
+
+}
+
+.infoBox p{
+background-color: grey;
+color: white;
+display: grid;
+align-items: center;
+justify-content: center;
+align-content: center;
+}
+
+.infoBox p{
+margin: 0;
+font-size: 20px;
+font-weight: 200;
+}
+
+.price{
+font-size: 20px;
+font-weight: 200;
+}
+
+.population{
+grid-area: population;
+}
+
+.income{
+grid-area: income;
+}
+
+.pageLogo{
+grid-area: logo;
+min-height:250px;
+background: white;
+background-image: url("map.jpeg");
+color:black;
+background-size: cover;
+background-position: bottom right;
+padding: 50px;
+display:grid;
+}
+.menu a{
+color: black;
+text-decoration: underline;
+text-transform: uppercase;
+margin-right: 20px;
+margin-bottom: 10px;
+}
+
+.menu {
+display: grid;
+border: 2px solid black;
+width: 100%;
+grid-template-rows: auto  ;
+grid-template-columns: 1fr 1fr 1fr;
+font-size: 20px;
+text-align: center;
+
+}
+
+.menu a:hover{
+text-decoration: underline;
+margin-right: 20px;
+color: grey;
+}
+
+.features{
+display: grid;
+grid-template-columns: repeat_auto-fit, minmax(200px, 1fr));
+
+}
+
+.feature h3{
+color: white;
+}
+
+.feature{
+background: grey;
+padding: 10px;
+text-align: center;
+}
+
+.feature .icon{
+font-size: 50px;
+color: white;
+
+
+}
+
+.feature p{
+color: white;
+}
+
+.about{
+background: white;
+color: grey;
+justify-content: start;
+align-content: center;
+}
+
+.infoBox {
+background-color: white;
+color: blue;
+display:grid;
+align-items: center;
+justify-content: center;
+align-content: center;
+}
+
+.infoBox p{
+margin: 0;
+}
+
+.price{
+font-size: 60px;
+font-weight: 300;
+}
+
+.population{
+grid-area: population;
+}
+
+.income{
+grid-area: income;
+}
+
+.frosted p{
+font-size: 16px;
+}
+
+body {
+  background-color: grey;
+}
+
+div.header{
+background-color: white;
+  width:1500px;
+  height: 90px;
+  padding-left: 10px; 
+  text-align: left;
+}
+
+div.gallery {
+  border: 1px solid #A9BCF5;
+}
+
+div.gallery:hover {
+  border: 1px solid #2E64FE;
+  background-color: white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 12px;
+  text-align: center;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+.bio {
+
+display: grid;
+font-size: 50px;
+text-align: center;
+
+}
+
+@media(max-width: 700px){
+.topSection{
+grid-template-areas: 
+"logo" "logo"
+"population" "income";} }
+li{
+font-size: 13px;
+margin-bottom: 20px;
+height:7px; 
+   }
+
+
+@media (max-width:400px){
+.topSection{
+grid-template-areas: 
+"logo"
+"population"
+"income"
+    }
+
+.price{
+font-size: 14px;
+font-weight: 300;
+margin-left: 10px;
+}
+
+.img{
+width: 250px;
+border: solid;
+border-color: white;
+}
+.about{
+grid-template-columns: 300px;
+}
+}
+
+@media print{
+body{
+background-color: white;
+}
+}
